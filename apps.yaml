@@ -417,3 +417,32 @@ blitz:
 orgzly:
   name: Orgzly Revived
   github: orgzly-revived/orgzly-android-revived
+keychat:
+  name: Keychat
+  github: keychat-io/keychat-app
+  npub: npub1h0uj825jgcr9lzxyp37ehasuenq070707pj63je07n8mkcsg3u0qnsrwx8
+transcribro:
+  name: Transcribro
+  github: soupslurpr/Transcribro
+brave:
+  name: Brave
+  github: brave/brave-browser
+fedi:
+  name: Fedi
+  npub: npub1uq70uqgas9pyhds2zt57kr9se8rg3s68ztphjnq82ts8rzeknmeql7u0c2
+  github: fedibtc/fedi-alpha
+peach:
+  name: Peach Bitcoin
+  npub: npub15369wu3wzzar5fclhecyqfv683x69n6nhlg7rxqnsg2dydgxflpq3apswl
+  github: Peach2Peach/peach-app
+envoy:
+  name: Envoy
+  github: Foundation-Devices/envoy
+  npub: npub1s0vtkgej33n7ec4d7ycxmwt78up8hpfa30d0yfksrshq7t82mchqynpq6j
+edge:
+  name: Edge
+  github: edgeapp/edge-react-gui
+bull:
+  name: Bull Bitcoin
+  github: SatoshiPortal/bullbitcoin-mobile
+  npub: npub1t289s8ck5qfwynf2vsq49t2kypvvkpj7rhegayrur0ag9s2sezaqgunkzs
