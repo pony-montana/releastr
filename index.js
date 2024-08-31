@@ -115,16 +115,12 @@ for (const args of appValues) {
   await $`rm -fr $FOLDER'`.env({ FOLDER: apkFolder }).text();
   await $`apktool d $APK'`.env({ APK: basename(apkPath) }).quiet();
 
-  let archs = [];
+  let archs = ['arm64-v8a'];
   try {
     const _archs = await $`ls $FOLDER/lib`.env({ FOLDER: apkFolder }).text();
     archs = _archs.trim().split('\n');
   } catch (_) {
     // if lib/ is not present, leave default and do nothing else
-  }
-  if (archs.length === 0) {
-    console.log('No architectures found');
-    continue;
   }
 
   const _sigHashes = await $`apksigner verify --print-certs $APK | grep SHA-256`.env({ APK: basename(apkPath) }).text();
@@ -270,7 +266,7 @@ for (const args of appValues) {
   let metadataEvent;
 
   // Do not submit again a file with same hash
-  if (filesOnRelay.length === 0) {
+  if (filesOnRelay.length === 0 || overwrite) {
     const metadata = {
       kind: 1063,
       content: `${name} ${apkVersion || latestReleaseJson.tag_name}`,
