@@ -446,3 +446,6 @@ bull:
   name: Bull Bitcoin
   github: SatoshiPortal/bullbitcoin-mobile
   npub: npub1t289s8ck5qfwynf2vsq49t2kypvvkpj7rhegayrur0ag9s2sezaqgunkzs
+iceraven-browser:
+  name: Iceraven Browser
+  github: https://github.com/fork-maintainers/iceraven-browser
